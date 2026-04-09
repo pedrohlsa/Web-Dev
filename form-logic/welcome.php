@@ -12,7 +12,6 @@ body {
     Name: <input type="text" name="name"><br>
     E-mail: <input type="text" name="email"><br>
     Uid: <input type="text" name="uid"><br>
-    Carai: <input type="text" name="carai"><br>
     <input type="submit">
 </form>
 
@@ -23,9 +22,8 @@ body {
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo "Welcome " . $_POST["name"] . "<br>";
-    echo "Your Email is " . $_POST["email"] . "<br>";
-    echo "Your UID is " . $_POST["uid"]."<br>";
-    echo "Seu carai é" . $_POST["carai"];
+    echo "Welcome: " . $_POST["name"] . "<br>";
+    echo "Your Email is: " . $_POST["email"] . "<br>";
+    echo "Your UID is: " . $_POST["uid"];
 }
 ?>
