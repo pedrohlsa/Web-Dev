@@ -1,26 +1,35 @@
-<!DOCTYPE html>
+<?php 
 
-<html>
+    $x = 10;
+    $y = 2;
+    $z = null;
 
-<style>
-    body{background-color: linen;}
-</style>
+    $z = $x + $y;
+    $z = $x - $y;
+    $z = $x * $y;
+    $z = $x / $y;
+    $z = $x ** $y;
+    $z = $x % $y;
 
-<body>
-    <video controls
-    width="560"
-    height="315">
-    <source
-    src="path/to/video.mp4"
-    type="video/mp4">
-    <source
-src="path/to/video/.webm"
-    type="video/webm">
-    Seu Browser não oferece suporte para a tag deste video.
-    </video>
+    echo $z;
 
-    <audio  
-    src="path/to/audio.mp3"
-    controls>
-    Seu browser não suporta a tag audio.
-    </audio>
+
+    $counter = 0;
+    $counter = $counter + 1;
+    echo $counter;
+    
+    $counter = 10;
+    $counter++;
+    $counter--;
+    echo $counter;
+    
+    $counter = 5;
+    $counter-=3;
+    echo $counter;
+
+    $total = 1 + 2 - 3 * 4 / 5 ** 6;
+    echo $total;
+    
+    
+
+?> 
