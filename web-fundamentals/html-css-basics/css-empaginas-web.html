@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+    <head>
+          <link rel="stylesheet" href="css-em-paginas-web.css">
+<style>
+p{ //css interna
+text-align:center;
+color: blue;
+font-size: 30px; // sempre q possivel trabalhar com css externa
+padding-top: 10px; // formato individual
+padding-bottom: 10px; // aplicado para todas as tags, salvo excecoes como inline.
+padding-right: 5px;
+padding-left: 5px;
+}
+#para1{
+    color:green;
+    padding: 10px 5px 10px 5px; // formato abreviado
+}
+</style>
+
+    </head>
+
+<body>
+<h1 style="color:blue;text-aling:center;font-size:4rem;">
+Sou um titulo com CSS Inline
+</h1>
+
+<p id="para1">
+Sou um paragrafo q mesmo tendo id, sou afetado pelo estilo aplicado via seletor
+tambem pelo estilo aplicado via ID
+</p>
+
+<h2 class="elemento-com-borda">
+Subtitulo com classe utilizada tambem em outro elemento
+</h2>
+<div class="elemento-com-borda cascata"
+    <p id="para2">
+    Oi, nao se esqueca de mim.
+    Mesmo entando dentro de um outro elemento, sou afetado
+    pelo estilo aplicado via seletor.
+    </p>
+</div>
+<div class="gradient">
+    Sou uma div estilizado com css3
+</div>
+</body>
+</html>
