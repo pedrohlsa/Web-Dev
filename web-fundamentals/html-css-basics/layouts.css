@@ -1,0 +1,89 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: linen;
+}
+
+.container-flexbox-row
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+.container-flexbox-row div
+{
+    border: 1px solid #000;
+    background: #336666;
+}
+.container-flexbox-col
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container-grid
+{
+    display: grid;
+    grid-template-columns: 
+    60px 60px 60px 60px 60px 60px;
+    /*grid-template-rows: 
+    100px 100px 100px 100px 100px 100px; */ 
+    color: maroon;
+}
+
+.container-grid div
+{
+    border: 1px solid #000;
+    background: #336666;
+}
+.container-absolute
+{
+    background-color: rgb(238, 130,238);
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 80px;
+    border: 3px solid #73ad21;
+    color: #000;
+}
+.container-static 
+{
+    width: 300px;   
+    border: 3px solid black ;
+    background: rgb(106,90,205);
+}
+.container-relative
+{
+    position: relative;
+    right: 100px;
+    border: 3px solid black;
+    width: 300px;
+    background: rgb(106,90,205);
+}
+.container-fixed
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    border: 3px solid black;
+    background: rgb(106,90,205);
+}
+
+.container-static div,
+.container-relative div,
+.container-fixed div,
+.container-flexbox-row,
+.container-flexbox-col,
+.container-grid
+{
+    color: black;
+    font-size: medium;
+}
