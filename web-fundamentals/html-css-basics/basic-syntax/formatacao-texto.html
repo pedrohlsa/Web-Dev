@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    
+    <h2>Negrito e Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica), ou seja, sem significado visual apenas.</p>
+    <p>Nesta frase temos um <strong>termo de destaque</strong> usando a tag &lt;strong&gt; (semântica), indicando que o conteúdo é importante.</p>
+    
+    <h2>Itálico e Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica), apenas estilo visual.</p>
+    <p>Nesta frase temos um <em>termo com ênfase</em> usando a tag &lt;em&gt; (semântica), usada para dar entonação ao texto.</p>
+    
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também <mark style="background-color: rgb(188, 244, 188);">textos marcados</mark> (tipo marca-texto) usando a tag &lt;mark&gt;.</p>
+    
+    <h2>Textos Grandes e Pequenos</h2>
+    <p>Estamos criando um <big>texto grande</big> (obsoleto no HTML5) e um <small>texto pequeno</small> neste parágrafo.</p>
+    
+    <h2>Texto Deletado e Inserido</h2>
+    <p>Podemos marcar um <del>texto como deletado</del> para indicar que ele foi removido ou não é mais válido.</p>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase que ele foi adicionado posteriormente.</p>
+    <p>Também existe a tag <u> para sublinhado</u>, mas ela não é semântica.</p>
+    
+    <h2>Texto Sobrescrito</h2>
+    <p>Para fórmulas matemáticas: $x^{20}+3$ (usando &lt;sup&gt;).</p>
+    
+    <h2>Texto Subscrito</h2>
+    <p>Para fórmulas químicas: $H_2O$ (usando &lt;sub&gt;).</p>
+    
+    <h2>Endereço</h2>
+    <p>A tag &lt;address&gt; é usada para informações de contato. Em dispositivos móveis, pode facilitar a integração com mapas:</p>
+    <address>Rua das Divisões, nº 255 - Rio de Janeiro, RJ</address>
+
+    <hr>
+
+    <h1>Outras Formatações</h1>
+    
+    <h2>Código-Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> foi escrito em JavaScript.</p>
+    <pre>
+        <code>
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'{num} é par')
+else:
+    print(f'{num} é ímpar')
+print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+    <p>Como diz o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+    
+    <h2>Citações Completas</h2>
+    <p>Como disse Jeff Noble em seu livro de HTML para iniciantes:</p>
+    <blockquote cite="http://google.com.br">
+        A diferença entre um elemento inline e um bloco de texto é muito importante. Os elementos HTML deste capítulo descrevem blocos de texto.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, e estou curtindo muito!</p>
+
+    <h2>Texto Invertido (Bi-Directional Override)</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo> (Direita para Esquerda)</p>
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML</bdo> (Esquerda para Direita)</p>
+ 
+</body> 
+</html>
