@@ -1,3 +1,8 @@
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: sans-serif;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -11,49 +16,49 @@ h1 {
   flex-direction: column;
 }
 
-.container-red,
-.container-yellow,
-.container-orange {
+.container-red, .container-yellow, .container-orange, 
+.container-green, .container-blue, .container-purple, 
+.container-brown, .container-black, .container-white, 
+.container-gray, .container-pink {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  width: 45%; 
+  width: 60%;
   margin-bottom: 30px;
 }
 
-.sub-red {
+.sub-red, .sub-yellow, .sub-orange, .sub-green, 
+.sub-blue, .sub-brown, .sub-purple, .sub-black, 
+.sub-white, .sub-gray, .sub-pink {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ff4d4d;
   padding: 15px;
   flex: 1;
-  border: solid gray;
+  border: 1px solid gray;
   border-radius: 15px;
   min-width: 0;
+  text-align: center;
 }
 
-.sub-yellow {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(255, 255, 42, 0.792);
-  padding: 15px;
-  flex: 1;
-  border: solid gray;
-  border-radius: 8px;
-  min-width: 0;
+.sub-red { background-color: #ff4d4d; }
+.sub-yellow { background-color: rgba(255, 255, 42, 0.792); }
+.sub-orange { background-color: rgb(255, 178, 36); }
+.sub-green { background-color: rgb(33, 240, 33); }
+.sub-blue { background-color: rgb(140, 216, 241); }
+.sub-purple { background-color: rgba(155, 89, 182, 0.7); }
+.sub-brown { background-color: rgba(165, 42, 42, 0.7); }
+.sub-black { background-color: #333; color: white; }
+.sub-white { background-color: #ffffff; }
+.sub-gray { background-color: #d3d3d3; }
+.sub-pink { background-color: #ffc0cb; }
+
+ul {
+  padding: 0;
+  list-style-position: inside;
 }
 
-.sub-orange {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(255, 178, 36);
-  padding: 15px;
-  flex: 1;
-  border: solid gray;
-  border-radius: 8px;
-  min-width: 0;
+p {
+  font-weight: bold;
 }
