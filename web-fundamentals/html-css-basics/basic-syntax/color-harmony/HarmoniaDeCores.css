@@ -1,0 +1,52 @@
+body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            border-bottom: 2px solid #bb86fc;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #bb86fc;
+            margin-top: 40px;
+        }
+
+        img {
+            max-width: 500px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        p {
+            max-width: 600px;
+            text-align: center;
+            color: #b3b3b3;
+            line-height: 1.5;
+        }
+
+        hr {
+            width: 100%;
+            max-width: 800px;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #333, transparent);
+            margin: 40px 0;
+        }
+
+        .dicas-container {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border-left: 4px solid #bb86fc;
+        }
