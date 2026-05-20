@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            height: 200px; /* ALTURA */
+            width: 200px; /* LARGURA */
+            border: 1px solid black; /* larg, tipo, cor*/
+        }
+        /* Pseudo Classes */
+        div:hover{
+            background-color: yellow;
+            transform: translateY(35deg);
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: red;
+            background-color: blue;
+            width: 200px;
+        }
+        h1{
+            margin-top: 40px;
+        }
+                a{
+            color: red;
+            text-decoration: none; /* tira o link */
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkred
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: lightblue;
+        }
+        .especial::before{
+            content: '→ ';
+        }
+        .especial::after {
+            content: ' ←';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial{
+            background-color: rgba(255, 0, 0, 0.18);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01
+        <p>Billy</p>
+    </div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <hr>
+    <h1>Links personalizados</h1>
+    <ul>
+        <li><a href="https://github.com/pedrohlsa" target="_blank" rel="external" >Repositorio Github</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="external" class="especial">Youtube</a></li>
+    </ul>
+</body>
+</html>
