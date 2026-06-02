@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box models</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            border: 3px solid black;
+            border-radius: 15px;
+            text-align: center;
+            width: 150px;
+            height: 70px;
+            padding: 5px;
+        }
+
+        h2, h3 {
+            border: 3px solid rgba(255, 0, 0, 0.678);
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .separacao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 50px;
+        }
+        .box-level, .inline-level-exemplo {
+            border: 3px solid rgba(102, 8, 8, 0.842);
+            border-radius: 15px;
+            width: 180px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        ul, li {
+            list-style-position: inside;
+            margin: 0;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Olá mundo</h1>
+    
+    <h2>Dois tipos de caixas:</h2>
+    <ul>
+        <li>Box-level</li>
+        <li>Inline-Level</li>
+    </ul>
+
+    <h2>Tipos de utilizáveis</h2>
+
+    <div class="separacao">
+        <div class="box-level">
+            <h3>Box-Level</h3>
+            <p>Pula linha</p>
+            <ul>
+                <li>div</li>
+                <li>h1 - h6</li>
+                <li>p</li>
+                <li>main</li>
+                <li>header</li>
+                <li>nav</li>
+                <li>article</li>
+                <li>aside</li>
+                <li>footer</li>
+                <li>form</li>
+                <li>video</li>
+            </ul>
+        </div>
+
+        <div class="inline-level-exemplo">
+            <h3>Inline-Level</h3>
+            <p>Não pula linha</p>
+          <ul>
+                <li>span</li>
+                <li>a</li>
+                <li>code</li>
+                <li>small</li>
+                <li>strong</li>
+                <li>em</li>
+                <li>sup-sub</li>
+                <li>label</li>
+                <li>button</li>
+                <li>input</li>
+                <li>select</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
