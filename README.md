@@ -58,7 +58,3 @@ Repositório focado nos meus estudos sobre Desenvolvimento Web (Front-end e Back
 | Front-end        | HTML5, CSS3                                           |
 | Back-end         | PHP                                                   |
 | Ferramentas      | Git, GitHub, VS Code                                  |
-
----
-
-## 📂 Estrutura do repositório
